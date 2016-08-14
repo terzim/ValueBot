@@ -12,9 +12,4 @@ python:
 install:
   - pip install -r requirements.txt
 # command to run tests
-script: 
-  - python /valuebot/importexcelsheet.py
-  - python /valuebot/createdataframe.py
-  - python /valuebot/makedatabase.py
-  - python /valuebot/updatedatabase.py
-  - python /valuebot/dumpdatabase.py
+script: cd valuebot && python importexcelsheet.py && python createdataframe.py && python makedatabase.py && python updatedatabase.py && python dumpdatabase.py
